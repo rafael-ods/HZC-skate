@@ -1,0 +1,42 @@
+@import url("../css/cabecalho/cabecalho.css");
+@import url("../css/menuLateral/menu-lateral.css");
+@import url("../css/principal/principal.css");
+@import url("../css/cartao/cartao.css");
+@import url(../css/cartaoConteudo/cartao-conteudo.css);
+@import url(../css/secaoVideos/secaoVideos.css);
+/* importante para usar os icones e adicionamos na fonte principal atraves das variaveis */
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+
+:root {
+    --cor-de-fundo: #1D232A;
+    --cor-do-cabeçalho:#1D232A;
+    --cor-do-cabeçalho-mobile: #15191C;
+    --menu-lateral: #15191C;
+    --cor-fonte-principal: #FFFFFF;
+    --cor-fonte-segundaria: #95999c;
+    --cor-botao:#0480DC;
+    --cor-sombra:0px 4px 4px rgba(0, 0, 0, 0.16);
+    --cor-de-fundo-cartao:#2C343A;
+    --fonte-principal: "Opens Sans","icones", sans-serif;
+
+}
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    color:var(--cor-fonte-principal);
+    font-family: var(--fonte-principal);
+}
+
+
+@media screen and (min-width:1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}

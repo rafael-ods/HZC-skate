@@ -1,0 +1,29 @@
+.principal {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-pagina {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+@media screen and (min-width:1440px) {
+    .principal {
+       display: grid;
+       grid-template-columns: auto 1fr auto;
+       grid-template-areas: 
+           "titulo-pagina  titulo-pagina titulo-pagina"
+           "destaque--video destaque--video videos--recentes" 
+           "secao-videos secao-videos secao-videos"
+           "produtos--recentes destaque--produtos destaque--produtos"
+           "secao-videos--produtos secao-videos--produtos secao-videos--produtos"
+       ;
+       column-gap: 32;
+       padding: 16px 32px; 
+       grid-column: 2;
+    }
+    
+}
